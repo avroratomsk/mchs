@@ -22,6 +22,8 @@
 @import "./components/fixed-contact";
 
 *{
+  margin: 0;
+  padding: 0;
   outline: none;
   box-sizing: border-box;
 }
@@ -31,8 +33,6 @@ html {
 }
 
 body{
-  background: #181818;
-  //background: #001727;
   margin: 0;
   padding: 0;
   display: flex;
