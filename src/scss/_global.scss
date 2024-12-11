@@ -1,0 +1,42 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1540px !important;
+    margin: 0 auto;
+    padding: 0 0.75rem;
+  }
+}
+
+@media (min-width: 992px){
+  .container {
+    max-width: 1100px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+h3{
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0px;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.fa, .fa-brands, .fa-regular, .fa-solid, .fab, .far, .fas {
+  line-height: 0 !important;
+}

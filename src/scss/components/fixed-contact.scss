@@ -1,0 +1,27 @@
+.fixed-contact {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  //background: rgba($color: #001727, $alpha: 0.1);
+  //backdrop-filter: blur(24px);
+  z-index: 99;
+
+
+  &__item{
+    writing-mode: vertical-rl;
+    transition: $animation-speed;
+
+    @media (hover: hover) {
+      &:hover{
+        color: #0064C8;
+      }
+    }
+  }
+}
