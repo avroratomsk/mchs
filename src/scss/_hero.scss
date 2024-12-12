@@ -1,0 +1,23 @@
+.hero {
+  background: center no-repeat;
+  background-size: cover;
+
+  &__inner{
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 120px 0px;
+  }
+
+  &__title {
+    max-width: 930px;
+    color: rgba($color: $white, $alpha: 1);
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 82px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+
+}

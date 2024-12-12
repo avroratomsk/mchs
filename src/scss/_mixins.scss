@@ -1,0 +1,19 @@
+@mixin flex-container($align: null, $justify:null, $gap:null, $wrap:null) {
+  display: flex;
+
+  @if $justify !=null {
+    justify-content: $justify;
+  }
+
+  @if $align !=null {
+    align-items: $align;
+  }
+
+  @if $gap !=null {
+    gap: $gap;
+  }
+
+  @if $wrap !=null {
+    flex-wrap: $wrap;
+  }
+}
