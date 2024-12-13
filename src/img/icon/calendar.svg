@@ -1,0 +1,14 @@
+<svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip40_302">
+			<rect id="fluent-mdl2:calendar" rx="0.000000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="fluent-mdl2:calendar" rx="0.000000" width="15.000000" height="15.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip40_302)">
+		<path id="Vector" d="M6 6L7 6L7 7L6 7L6 6ZM9 12L10 12L10 13L9 13L9 12ZM12 6L13 6L13 7L12 7L12 6ZM9 6L10 6L10 7L9 7L9 6ZM6 8L7 8L7 9L6 9L6 8ZM3 8L4 8L4 9L3 9L3 8ZM12 8L13 8L13 9L12 9L12 8ZM9 8L10 8L10 9L9 9L9 8ZM6 10L7 10L7 11L6 11L6 10ZM3 10L4 10L4 11L3 11L3 10ZM12 10L13 10L13 11L12 11L12 10ZM9 10L10 10L10 11L9 11L9 10ZM6 12L7 12L7 13L6 13L6 12ZM3 12L4 12L4 13L3 13L3 12ZM16 1L16 15L0 15L0 1L3 1L3 0L4 0L4 1L12 1L12 0L13 0L13 1L16 1ZM1 2L1 4L15 4L15 2L13 2L13 3L12 3L12 2L4 2L4 3L3 3L3 2L1 2ZM15 14L15 5L1 5L1 14L15 14Z" fill="#333333" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

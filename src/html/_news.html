@@ -1,0 +1,34 @@
+<section class="news">
+  <div class="container">
+    <div class="news__head">
+      <h2 class="news__title">Новости</h2>
+    </div>
+    <div class="news__grid">
+      @@for (var i = 0; i < 4; i++) {
+      <div class="news__item">
+        <div class="news__image">
+          <img src="@img/news.jpeg" alt="">
+        </div>
+        <div class="news__content">
+          <h3>Последний день рабочей недели может быть плодотворным</h3>
+          <p>
+            В минувшую пятницу прошла практическая отработка действий персонала филиала ООО «Газпром инвест» «Новый
+            Уренгой» по тушению пожара с помощью первичных средств пожаротушения. Это мероприятие позволило сотрудникам
+            отточить свои навыки и проверить готовность к быстрому и эффективному реагированию в случае возгорания.
+          </p>
+        </div>
+        <div class="news__bottom">
+          <div class="news__date">
+            <div class="news__icon">
+              <img src="@img/icon/calendar.svg" alt="">
+            </div>
+            <p class="news__date-text">
+              16 ноября 2024
+            </p>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
