@@ -3,10 +3,14 @@
   background-size: cover;
 
   &__inner{
-    height: 100vh;
+
     display: flex;
     align-items: flex-end;
     padding: 120px 0px;
+
+    @media screen and (min-width: 992px) {
+      height: 100vh;
+    }
   }
 
   &__title {
@@ -14,9 +18,17 @@
     color: rgba($color: $white, $alpha: 1);
     font-size: 60px;
     font-weight: 800;
-    line-height: 82px;
+    line-height: 130%;
     text-align: left;
+    text-wrap: balance;
     text-transform: uppercase;
+
+    @media screen and (max-width: 992px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
   }
 
 

@@ -16,8 +16,13 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 40px;
+    }
   }
 
   &__item {
@@ -46,13 +51,14 @@
       color: rgba($color: $blueDark, $alpha: 1);
       font-size: 32px;
       font-weight: 800;
-      line-height: 44px;
+      line-height: 130%;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 25px;
+      }
     }
 
     p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 22px;
     }
   }
 
@@ -69,10 +75,16 @@
   }
 
   &__date-text {
-    font-size: 16px;
     font-weight: 300;
-    line-height: 22px;
   }
 
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+    font-weight: 600;
+  }
 
 }

@@ -20,6 +20,7 @@
 @import "_service";
 @import "_mixins";
 @import "_news";
+@import "_trust";
 @import "./components/fixed-contact";
 
 *{
@@ -40,6 +41,8 @@ body{
   flex-direction: column;
   height: 100%;
   min-width: 360px;
+  font-size: 16px;
+  line-height: 140%;
   overflow-x: hidden;
   font-family: $main_font;
   background-color: rgba($color: $white, $alpha: 1);
