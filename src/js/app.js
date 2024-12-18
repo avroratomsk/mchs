@@ -6,10 +6,11 @@ functions.isWebp();
 import {EffectFade, Navigation, Pagination, Autoplay} from 'swiper/modules';
 import Swiper from 'swiper';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.views-type__slider', {
   modules: [Navigation, Pagination, EffectFade, Autoplay],
-  effect: "fade",
   loop: true,
+  slidesPerView: 4.5,
+  spaceBetween: 40,
   autoplay: {
     delay: 5000,
   },
