@@ -1,0 +1,139 @@
+.footer {
+  border-top: 0.5px solid rgb(212, 212, 212);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+
+  &__logo {
+  }
+
+  &__logo-text {
+    color: rgb(126, 126, 126);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 135%;
+    margin-top: 20px;
+  }
+
+  &__item {
+    padding: 20px 30px;
+    border-left: 0.5px solid rgb(212, 212, 212);
+
+    &:nth-child(3) {
+      padding: 20px 0px;
+    }
+
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border-right: 0.5px solid rgb(212, 212, 212);
+    }
+
+    @media (max-width: 992px) and (min-width: 768px) {
+      &:nth-child(2) {
+        border-right: 0.5px solid rgb(212, 212, 212);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      border: none;
+      &:last-child {
+        border: none;
+      }
+
+      &:nth-child(3) {
+        border-bottom: 0.5px solid rgb(212, 212, 212);
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: 20px 0px;
+
+      .footer__title, .footer__subtitle{
+        padding: 0px 0px;
+      }
+
+      .footer__numbers{
+        padding: 20px 0px;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 137%;
+      text-decoration-line: underline;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 137%;
+    padding: 0px 30px;
+  }
+
+  &__subtitle {
+    color: rgb(126, 126, 126);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 135%;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 30px;
+  }
+
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px;
+    border-top: 0.5px solid rgb(212, 212, 212);
+  }
+
+  &__numbers-line {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+
+    p {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 135%;
+    }
+  }
+
+  &__blind {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 137%;
+  }
+}
+
+.nav-footer {
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+
+      a {
+        color: rgb(126, 126, 126);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 135%;
+        text-decoration: none;
+      }
+
+    }
+  }
+}
