@@ -3,7 +3,6 @@
   bottom: 20px;
   left: 0px;
   width: 100%;
-  display: none;
   background-color: rgba($color: $blueLight, $alpha: 1);
   padding: 10px 0px;
 
@@ -12,6 +11,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
 
   }
 
@@ -38,5 +42,9 @@
     font-size: 12px;
     font-weight: 800;
     background: rgb(255, 255, 255);
+
+    @media screen and (max-width: 425px) {
+      width: 100%;
+    }
   }
 }
