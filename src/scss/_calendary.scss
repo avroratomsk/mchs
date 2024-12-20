@@ -1,0 +1,125 @@
+.calendary {
+  padding: 50px 0px 100px;
+
+  &__mini-banner {
+    width: 240px;
+    height: 70px;
+    margin-bottom: 15px;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__col {
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: rgb(17, 41, 77);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 137%;
+  }
+
+  &__grid{
+    display: flex;
+
+  }
+
+  &__item{
+    width: 170px;
+    height: 140px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.5px solid rgb(151, 151, 151);
+    border-bottom: 0.5px solid rgb(151, 151, 151);
+
+    & + & {
+      border-left: 0.5px solid rgb(151, 151, 151);
+    }
+
+    &:first-child {
+      border-left: 0.5px solid rgb(151, 151, 151);
+    }
+
+    &:last-child {
+      border-right: 0.5px solid rgb(151, 151, 151);
+    }
+
+    p{
+      flex: 1 1 auto;
+    }
+
+    img {
+      width: 20px;
+      align-self: flex-end;
+    }
+  }
+}
+
+.calendary-day {
+  display: flex;
+  margin-bottom: 20px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 60px;
+    border-top: 0.5px solid rgb(151, 151, 151);
+    border-bottom: 0.5px solid rgb(151, 151, 151);
+
+    & + & {
+      border-left: 0.5px solid rgb(151, 151, 151);
+    }
+
+    &:first-child {
+      border-left: 0.5px solid rgb(151, 151, 151);
+    }
+
+    &:last-child {
+      border-right: 0.5px solid rgb(151, 151, 151);
+    }
+
+    span {
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 137%;
+    }
+  }
+}
+
+.calendary-info {
+  padding: 40px 40px;
+  border: 0.5px solid rgb(151, 151, 151);
+  text-align: center;
+  max-width: 630px;
+
+  &__day {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 137%;
+    margin-bottom: 5px;
+
+    span {
+      color: #1F4E93;
+      font-weight: 500;
+    }
+  }
+
+  &__event {
+  }
+
+}
