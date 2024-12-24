@@ -1,5 +1,5 @@
 .news {
-  padding: 72px 0px;
+  padding: 50px 0px;
 
   &__head {
     padding: 12px 0px;
@@ -8,10 +8,7 @@
   }
 
   &__title {
-    color: rgba($color: $blueDark, $alpha: 1);
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 150%;
+
   }
 
   &__grid {
@@ -31,8 +28,10 @@
 
   &__image {
     position: relative;
+    display: block;
     padding-bottom: 57%;
     margin-bottom: 20px;
+    overflow: hidden;
 
     img {
       position: absolute;
@@ -40,6 +39,15 @@
       left: 0;
       width: 100%;
       height: 100%;
+      transition: $animation-speed;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
     }
   }
 
@@ -52,9 +60,20 @@
       font-size: 32px;
       font-weight: 800;
       line-height: 130%;
+      transition: $animation-speed;
 
       @media screen and (max-width: 1200px) {
         font-size: 25px;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          color: $blueLight;
+
+          & > * {
+            color: inherit;
+          }
+        }
       }
     }
 
@@ -85,6 +104,22 @@
     margin-top: 40px;
     gap: 10px;
     font-weight: 600;
+    transition: $animation-speed;
+
+    img {
+      display: block;
+      transition: $animation-speed;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: .8;
+
+        img {
+          transform: translateX(5px);
+        }
+      }
+    }
   }
 
 }

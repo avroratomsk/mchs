@@ -1,0 +1,29 @@
+.breadcrumbs {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+
+  // .breadcrumbs__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 130%;
+    color: #868686;
+
+    &:not(:last-child) {
+      &::after {
+        content: '/';
+        display: block;
+        margin: 0px 10px;
+      }
+    }
+
+    @media screen and (max-width: 620px) {
+      font-size: 11px;
+    }
+  }
+}

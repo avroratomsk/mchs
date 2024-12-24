@@ -1,10 +1,12 @@
 .cookie{
+  display: none;
   position: fixed;
   bottom: 20px;
   left: 0px;
   width: 100%;
   background-color: rgba($color: $blueLight, $alpha: 1);
   padding: 10px 0px;
+  z-index: 99;
 
   &__row{
     display: flex;
@@ -42,9 +44,16 @@
     font-size: 12px;
     font-weight: 800;
     background: rgb(255, 255, 255);
+    transition: $animation_speed;
 
     @media screen and (max-width: 425px) {
       width: 100%;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        opacity: .8;
+      }
     }
   }
 }
