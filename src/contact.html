@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"FrontEnd Avrora"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+  <div class="contact contact-page">
+    <div class="container">
+      <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <a href="/" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Главная
+          <meta itemprop="position" content="1" />
+        </a>
+        <a href="#" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+           class="breadcrumbs__item">
+          Контакты
+          <meta itemprop="position" content="2" />
+        </a>
+      </div>
+      <h2 class="contact__title title">Контакты</h2>
+      <div class="contact__row">
+        <div class="contact__col contact-action">
+          <p class="contact__underline">
+            Наши контакты для связи:
+          </p>
+          <a href="tel:+78888884554" class="contact__phone">8 888 888-45-54</a>
+          <p class="contact__address">
+            Россия Ямало-Ненецкий автономный округ город Новый Уренгой Северная коммунальная зона 12.
+          </p>
+          <a href="mailto:priemnaya@udp3.89.mchs.gov.ru" class="contact__email">priemnaya@udp3.89.mchs.gov.ru</a>
+        </div>
+        <div class="contact__col">
+          <div class="numbers-extr">
+            <div class="numbers-extr__item">
+              <p class="numbers-extr__text">Единый телефон пожарных и спасаталей </p>
+              <a href=""><span>01/101</span><img src="@img/icon/contact_phone.svg" alt=""></a>
+            </div>
+            <div class="numbers-extr__item">
+              <p class="numbers-extr__text">Полиция</p>
+              <a href=""><span>02/102</span><img src="@img/icon/contact_phone.svg" alt=""></a>
+            </div>
+            <div class="numbers-extr__item">
+              <p class="numbers-extr__text">Скорая помощь</p>
+              <a href=""><span>03/103</span><img src="@img/icon/contact_phone.svg" alt=""></a>
+            </div>
+            <div class="numbers-extr__item">
+              <p class="numbers-extr__text">Аварийная газовая служба</p>
+              <a href=""><span>04/104</span><img src="@img/icon/contact_phone.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__map">
+        <img src="@img/map.png" alt="">
+      </div>
+    </div>
+  </div>
+</main>
+
+@@include('html/_footer.html')
+
+<script src="js/app.min.js"></script>
+</body>
+</html>

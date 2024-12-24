@@ -76,7 +76,7 @@
     font-weight: 600;
     line-height: 19px;
 
-    span{
+    span {
       text-wrap: balance;
     }
 
@@ -118,6 +118,7 @@
 
   &__inner {
     @include flex-container(center, space-between, 20px);
+
   }
 
   &__list {
@@ -125,6 +126,22 @@
   }
 
   &__item {
+    position: relative;
+
+    @media (hover: hover) {
+      &:hover {
+        .nav__link {
+          background-color: rgba($color: $white, $alpha: 1);
+          color: rgba($color: $blueLight, $alpha: 1);
+        }
+
+        .submenu {
+          transform: translateY(0px);
+          pointer-events: all;
+          opacity: 1;
+        }
+      }
+    }
   }
 
   &__link {
@@ -136,12 +153,12 @@
     line-height: 22px;
     transition: 0.25s;
 
-    @media (hover: hover) {
-      &:hover {
-        background-color: rgba($color: $greyLight, $alpha: 1);
-        color: rgba($color: $blueDark, $alpha: 1);
-      }
-    }
+    //@media (hover: hover) {
+    //  &:hover {
+    //    background-color: rgba($color: $white, $alpha: 1);
+    //    color: rgba($color: $blueDark, $alpha: 1);
+    //  }
+    //}
 
     @media screen and (max-width: 1370px) {
       padding: 12px 7px;
@@ -155,6 +172,34 @@
     //&:last-child {
     //  padding-right: 0;
     //}
+  }
+}
+
+
+.submenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 290px;
+  background-color: $white;
+  transform: translateY(30px);
+  pointer-events: none;
+  opacity: 0;
+  transition: $animation-speed;
+
+
+  &__item {
+
+    a {
+      display: block;
+      padding: 10px 10px;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: rgba($color: $blueLight, $alpha: 0.03);
+      }
+    }
   }
 }
 

@@ -1,47 +1,55 @@
-.contact{
+.contact {
   padding: 50px 0px;
 
-  &__inner{
+  &__inner {
     padding: 50px 0px;
     border-top: 2px solid rgba($color: darkBlue, $alpha: 1);
   }
 
-  &__title{
+  &__title {
     margin-bottom: 50px;
     text-align: center;
   }
 
-  &__row{
+  &__row {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
-  &__map{
+  &__map {
     margin-top: 100px;
 
-    img{
+    img {
       max-width: 100%;
     }
   }
 
-  &__col{}
+  &__col {
 
-  &__underline{
+    @media screen and (min-width: 992px) {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__underline {
     font-size: 24px;
     font-weight: 800;
     line-height: 137%;
   }
 
-  &__phone,&__email{
+  &__phone, &__email {
     line-height: 110%;
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
   }
 
-  &__phone{
+  &__phone {
     position: relative;
     font-size: 48px;
     font-weight: 600;
@@ -58,7 +66,7 @@
 
   }
 
-  &__email{
+  &__email {
     font-size: 24px;
     font-weight: 500;
     transition: $animation_speed;
@@ -74,7 +82,7 @@
     }
   }
 
-  &__address{
+  &__address {
     max-width: 540px;
     color: rgb(17, 41, 77);
     font-size: 24px;
@@ -83,12 +91,64 @@
     text-wrap: balance;
   }
 }
-.contact-action{
+
+.contact-action {
   display: flex;
   flex-direction: column;
   gap: 30px;
 
   @media screen and (max-width: 576px) {
     gap: 20px;
+  }
+}
+
+.contact-page {
+  .contact__title {
+    text-align: left;
+  }
+
+  .contact__address {
+    font-size: 16px;
+  }
+}
+
+.numbers-extr{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 0.5px solid #979797;
+    //border-left: 0.5px solid #979797;
+    //border-top: 0.5px solid #979797;
+    //border-bottom: 0.5px solid #979797;
+
+    &:last-child {
+      //border-right: 0.5px solid #979797;
+    }
+  }
+
+  &__text{
+    flex: 1 1 auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 137%;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration-line: underline;
+
+    img {
+      display: block;
+    }
   }
 }
