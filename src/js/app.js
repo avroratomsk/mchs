@@ -32,3 +32,14 @@ const swiper = new Swiper('.views-type__slider', {
     },
   },
 });
+
+const swiper_single = new Swiper('.single__slider', {
+  modules: [Navigation, Pagination, EffectFade, Autoplay],
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 40,
+  grabCursor: true,
+  autoplay: {
+    delay: 5000,
+  },
+});
