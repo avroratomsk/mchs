@@ -1,4 +1,5 @@
 import * as functions from "./modules/functions.js";
+import "./modules/venobox.js";
 
 functions.isWebp();
 
@@ -42,4 +43,12 @@ const swiper_single = new Swiper('.single__slider', {
   autoplay: {
     delay: 5000,
   },
+});
+
+new VenoBox({
+  selector: '.doc__item',
+  numeration: true,
+  infinigall: true,
+  share: true,
+  spinner: 'rotating-plane'
 });
