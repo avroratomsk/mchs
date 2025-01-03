@@ -30,10 +30,11 @@
 @import "_doc";
 @import "venobox";
 @import "_links";
+@import "_blog-page";
 @import "./components/_cookie";
 @import "./components/_breadcrumbs";
 
-*{
+* {
   margin: 0;
   padding: 0;
   outline: none;
@@ -44,7 +45,7 @@ html {
   height: 100%;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   display: flex;

@@ -16,11 +16,17 @@ p {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding-left: 0px;
 }
@@ -31,7 +37,13 @@ button {
   border: none;
 }
 
-.fa, .fa-brands, .fa-regular, .fa-solid, .fab, .far, .fas {
+.fa,
+.fa-brands,
+.fa-regular,
+.fa-solid,
+.fab,
+.far,
+.fas {
   line-height: 0 !important;
 }
 
@@ -40,4 +52,21 @@ button {
   font-size: 40px;
   font-weight: 800;
   line-height: 150%;
+}
+
+.pamytka {
+  padding: 50px;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  &__inner {}
+
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
