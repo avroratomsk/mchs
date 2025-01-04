@@ -70,3 +70,13 @@ button {
     }
   }
 }
+
+.bvi-active {
+  .text-image__top--outside {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+[data-bvi-theme="white"] {}
