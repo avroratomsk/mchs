@@ -1,0 +1,20 @@
+.pamytka {
+  padding: 50px;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
