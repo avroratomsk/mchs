@@ -17,8 +17,17 @@
       align-items: center;
       justify-content: center;
       padding: 15px 20px;
-      background: $blueLight;
-      color: #ffffff;
+      color: rgba($color: $black, $alpha: 1);
+      border: 1px solid rgb($color: $black, $alpha: 0.2);
+      flex-grow: 1;
+      transition: $animation-speed;
+
+      @media(hover:hover) {
+        &:hover {
+          background-color: rgba($color: $blueLight, $alpha: 1);
+          color: rgba($color: $white, $alpha: 1);
+        }
+      }
     }
   }
 }

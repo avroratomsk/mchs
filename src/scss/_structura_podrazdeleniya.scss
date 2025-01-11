@@ -1,0 +1,42 @@
+.structura {
+  padding: 50px 0px;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    line-height: 120%;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 40px;
+
+    li {
+      color: $blueLight;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $blueLight;
+
+        @media(hover:hover) {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+}

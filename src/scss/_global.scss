@@ -52,11 +52,63 @@ button {
   font-size: 40px;
   font-weight: 800;
   line-height: 150%;
+
+  @media screen and (max-width: 992px){
+    font-size: 30px;
+  }
 }
 
-.text{
+.text {
 
-  .link__hero{}
+  .link__hero {
+    display: block;
+    padding: 10px 15px;
+    background-color: rgba($color: $black, $alpha: .1);
+    margin-bottom: 30px;
+    transition: $animation-speed;
+
+    @media (hover:hover) {
+      &:hover{
+        background-color: rgba($color: $black, $alpha: .15);
+      }
+    }
+  }
+
+  h1, h2 {
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+
+  a {
+    line-height: 150%;
+    color: rgba($color: $blueLight, $alpha: 1);
+    transition: $animation-speed;
+
+    @media (hover:hover) {
+      &:hover {
+        color: rgba($color: $blueDark, $alpha: 1);
+      }
+    }
+  }
+
+  p {
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .bvi-active {
@@ -67,4 +119,5 @@ button {
   }
 }
 
-[data-bvi-theme="white"] {}
+[data-bvi-theme="white"] {
+}
