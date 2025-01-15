@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"FrontEnd Avrora"
+})
+<body>
+@@include('html/_header.html')
+
+<main>
+  <div class="search">
+    <div class="container">
+      <h1 class="search__title title">Результат поиска</h1>
+      <div class="search__inner">
+        <p class="simplesearch-results">результатов найдено для "<span class="simplesearch-highlight">Док</span>"</p>
+        <div class="simplesearch-paging">
+          <span class="simplesearch-result-pages">Страницы с результатами поиска:</span><span class="simplesearch-page simplesearch-current-page">11</span>
+        </div>
+        <div class="simplesearch-results-list">
+          <div class="simplesearch-result">
+            <h3>1. <a href="dokumentyi/" title="">Документы</a></h3>
+            <div class="extract">
+              <p></p>
+            </div>
+          </div>
+          <div class="simplesearch-result">
+            <h3>2. <a href="dokumentyi/ustavnyie-dokumentyi" title="">Уставные документы</a></h3>
+            <div class="extract">
+              <p></p>
+            </div>
+          </div>
+          <div class="simplesearch-result">
+            <h3>3. <a href="oak/organizaczionno-rasporyaditelnyie-dokumentyi" title="">Организационно-распорядительные документы</a></h3>
+            <div class="extract">
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="simplesearch-paging">
+          <span class="simplesearch-result-pages">Страницы с результатами поиска:</span>
+          <span class="simplesearch-page simplesearch-current-page">11</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+@@include('html/_footer.html')
+@@include('html/components/_popup.html')
+
+<script src="js/app.min.js"></script>
+</body>
+</html>

@@ -20,6 +20,9 @@
               <span>«УПРАВЛЕНИЕ ДОГОВОРНЫХ ПОДРАЗДЕЛЕНИЙ ФЕДЕРАЛЬНОЙ ПРОТИВОПОЖАРНОЙ СЛУЖБЫ</span>
               <span>ГОСУДАРСТВЕННОЙ ПРОТИВОПОЖАРНОЙ СЛУЖБЫ № 3»</span>
             </div>
+            <div class="middle-header__logo-mobile">
+              <span>ФГБУ «Управление ДП ФПС ГПС №3»</span>
+            </div>
           </div>
           <div class="middle-header__action">
             <a href="" class="middle-header__action-item header__location">
@@ -30,15 +33,16 @@
               <img src="@img/icon/phone.svg" alt="">
               <span>8 (3494) 28-11-66</span>
             </a>
-            <a href="tel:+73494281166" class="middle-header__action-item header__logo-right">
-              <img src="@img/icon/logo-2.png" alt="">
-            </a>
           </div>
+          <a href="tel:+73494281166" class="middle-header__action-item header__logo-right">
+            <img src="@img/icon/logo-2.png" alt="">
+          </a>
           <button type="button" class="middle-header__burger burger" id="burger"><span></span></button>
         </div>
       </div>
     </div>
     <nav class="header__nav nav">
+      <button class="nav__close" id="nav-close"><i class="fa-solid fa-xmark"></i></button>
       <div class="container">
         <div class="nav__inner">
           <ul class="nav__list">
@@ -56,7 +60,16 @@
               <a href="#" class="nav__link">Виды деятельности</a>
               <ul class="submenu">
                 <li class="submenu__item"><a href="">Руководство</a></li>
-                <li class="submenu__item"><a href="">Структура</a></li>
+                <li class="submenu__item">
+                  <a href="">Структура</a>
+                  <ul class="sub-submenu">
+                    <li class="submenu__item"><a href="">Руководство</a></li>
+                    <li class="submenu__item"><a href="">Структура</a></li>
+                    <li class="submenu__item"><a href="">Структурные подразделения</a></li>
+                    <li class="submenu__item"><a href="">Исторический формуляр</a></li>
+                    <li class="submenu__item"><a href="">Полномочия, задачи и функции</a></li>
+                  </ul>
+                </li>
                 <li class="submenu__item"><a href="">Структурные подразделения</a></li>
                 <li class="submenu__item"><a href="">Исторический формуляр</a></li>
                 <li class="submenu__item"><a href="">Полномочия, задачи и функции</a></li>
@@ -70,7 +83,7 @@
             <li class="nav__item"><a href="#" class="nav__link">Противопожарная пропаганда</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Дистанционное обучение</a></li>
           </ul>
-          <button type="button" class="header__search">
+          <button type="button" class="header__search" data-popup="leave-request">
             <img src="@img/icon/search.svg" alt="">
           </button>
         </div>
