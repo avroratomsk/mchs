@@ -120,6 +120,7 @@
     }
   }
 
+
   &__link--wrap {
     display: flex;
     gap: 37px;
@@ -160,4 +161,19 @@
       object-fit: cover;
     }
   }
+}
+
+.text-image__links{
+}
+
+.text-image__link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  width: 100%;
+  background-color: $blueLight;
+  color: $white;
+  margin-bottom: 30px;
+  text-align: center;
 }

@@ -53,7 +53,7 @@ button {
   font-weight: 800;
   line-height: 150%;
 
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 992px) {
     font-size: 30px;
   }
 }
@@ -67,8 +67,8 @@ button {
     margin-bottom: 30px;
     transition: $animation-speed;
 
-    @media (hover:hover) {
-      &:hover{
+    @media (hover: hover) {
+      &:hover {
         background-color: rgba($color: $black, $alpha: .15);
       }
     }
@@ -94,7 +94,7 @@ button {
     color: rgba($color: $blueLight, $alpha: 1);
     transition: $animation-speed;
 
-    @media (hover:hover) {
+    @media (hover: hover) {
       &:hover {
         color: rgba($color: $blueDark, $alpha: 1);
       }
@@ -109,6 +109,17 @@ button {
   img {
     max-width: 100%;
   }
+
+  ul {
+    list-style: disc;
+    color: $blueLight;
+    padding-left: 30px;
+    margin-bottom: 20px;
+
+    li {
+      line-height: 140%;
+    }
+  }
 }
 
 .bvi-active {
@@ -121,3 +132,66 @@ button {
 
 [data-bvi-theme="white"] {
 }
+
+.single-struct {
+  padding: 50px 0px;
+
+  &__h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    line-height: 120%;
+  }
+
+  &__nach {
+    //display: flex;
+    //gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__image-nach {
+    max-width: 312px;
+    max-height: 439px;
+
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name-nach {
+    font-weight: 500;
+    line-height: 140%;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    @media screen and (min-width: 992px) {
+      flex: 1 1 50%;
+    }
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+}
+
