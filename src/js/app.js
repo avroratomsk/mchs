@@ -1,5 +1,6 @@
 import * as functions from "./modules/functions.js";
 import "./modules/venobox.js";
+import "./modules/calendary.js";
 
 functions.isWebp();
 
