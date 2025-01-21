@@ -1,12 +1,12 @@
 console.log("work")
 
-// const events = [{
-//   "date": "2025-01-20 15:31:28",
-//   "title": "Какое-то событие"
-// }, {
-//   "date": "2025-01-22 15:31:39",
-//   "title": "Новое событие"
-// }];
+const events = [{
+  "date": "2025-01-20 15:31:28",
+  "title": "Какое-то событие"
+}, {
+  "date": "2025-01-22 15:31:39",
+  "title": "Новое событие"
+}];
 
 function localFormatDate(date) {
   const options = {year: 'numeric', month: 'numeric', day: 'numeric'};

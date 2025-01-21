@@ -2,6 +2,7 @@
   padding: 50px 0px 100px;
 
   &__mini-banner {
+    display: block;
     width: 240px;
     height: 70px;
     margin-bottom: 15px;
@@ -17,6 +18,10 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @media screen and (max-width: 1200px){
+      flex-direction: column;
+    }
   }
 
   &__col {
@@ -33,6 +38,10 @@
   &__grid{
     display: flex;
 
+    @media screen and (max-width: 768px){
+      flex-wrap: wrap;
+      gap: 10px;
+    }
   }
 
   &__item{
@@ -63,6 +72,15 @@
     img {
       width: 20px;
       align-self: flex-end;
+    }
+
+    @media screen and (max-width: 1350px) and (min-width: 1200px) {
+      width: 140px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      border-right: 0.5px solid rgb(151, 151, 151);
     }
   }
 }
@@ -112,6 +130,11 @@
       span:first-of-type{
         border-color: #1f4e93;
       }
+    }
+
+    @media (max-width: 1350px) and (min-width: 1200px) {
+      width: 60px;
+      height: 50px;
     }
   }
 
